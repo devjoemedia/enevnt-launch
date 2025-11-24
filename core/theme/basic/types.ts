@@ -4,6 +4,10 @@ export interface EventOutline {
 }
 
 export interface BasicFormData {
+  theme: {
+    name: Theme
+    name_friendly: string
+  }
   event_title: string
   event_description: string
   event_location: string
@@ -17,3 +21,5 @@ export interface BasicFormData {
   partners: string[]
   event_outline: EventOutline[]
 }
+
+export type Theme = 'basic' | 'classic'

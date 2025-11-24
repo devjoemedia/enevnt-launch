@@ -25,14 +25,13 @@ export function NavMain({
   }[],
   toggleSheet?: MouseEventHandler<HTMLLIElement>
 }) {
-   const {brandname} = useParams<{ brandname: string }>()
 
   return (
     <SidebarGroup>
       <SidebarMenu>
         {items.map((item) => (
           <SidebarMenuItem onClick={toggleSheet} key={item.title} className=" rounded-lg " >
-            <Link href={`/${brandname}${item.url}`}>
+            <Link href={`${item.url}`}>
               <SidebarMenuButton tooltip={item.title} className="py-3 cursor-pointer hover:bg-slate-100 rounded  h-full" >
                 {item.icon && <item.icon size={18} className="text-3xl text-brand" />}
                 <span className="text-brand">{item.title} </span>

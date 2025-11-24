@@ -50,37 +50,37 @@ const data = {
   navMain: [
     {
       title: "Design",
-      url: "/",
+      url: "/e/dashboard",
       icon: Home,
       isActive: true
     },
     {
       title: "Pricing",
-      url: "/pricing",
+      url: "/e/dashboard/pricing",
       icon: CircleDollarSign,
       isActive: false
     },
     {
       title: "Forms",
-      url: "/forms",
+      url: "/e/dashboard/forms",
       icon: SquareTerminal,
       isActive: false
     },
     {
       title: "Engagements",
-      url: "/engagements",
+      url: "/e/dashboard/engagements",
       icon: PieChart,
       isActive: false,
     },
     {
       title: "User Management",
-      url: "/user-management",
+      url: "/e/dashboard/user-management",
       icon: Users,
       isActive: false
     },
     {
       title: "Domain Management",
-      url: "/domain-management",
+      url: "/e/dashboard/domain-management",
       icon: GlobeIcon,
       isActive: false
     },

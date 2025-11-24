@@ -4,6 +4,10 @@ import { persist, createJSONStorage } from 'zustand/middleware'
 import { BasicFormData } from './types'
 
 export const defaultFormData: BasicFormData = {
+  theme: {
+    name: 'basic',
+    name_friendly: 'Basic Theme',
+  },
   event_title: 'eLaunch Grand Opening #1',
   event_description: 'Join us for the grand opening of eLaunc, where we will unveil the latest features and technologies in event management. Whether you are a seasoned event planner or just starting out, we have something for everyone. Come and experience the future of event management with us!',
   event_location: 'eLaunc Center, New York, NY',
