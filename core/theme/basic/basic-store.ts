@@ -10,7 +10,7 @@ export const defaultFormData: BasicFormData = {
   event_date: '2023-12-15',
   event_start_time: '10:00 AM',
   event_end_time: '6:00 PM',
-  banner_image: '1.png',
+  banner_image: '/1.png',
   logo: '',
   host: 'eLaunc LLC',
   speakers: [
