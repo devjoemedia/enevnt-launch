@@ -1,0 +1,9 @@
+{
+  "basic": {
+    "title": "Basic Theme",
+    "description": "Basic theme for the application",
+    "form": "/core/theme/basic/form",
+    "ui": "/core/theme/basic/ui"
+  }
+
+}
