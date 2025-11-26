@@ -1,46 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  const communities = [
-    {
-      title: "Ryan's Run Club",
-      platform: "WhatsApp",
-      perks: ["Exclusive Events", "2x Runs Per Week + Brunch"],
-      price: "$22 / month",
-    },
-    {
-      title: "Locks",
-      platform: "Discord",
-      perks: ["Prize Picks Plays"],
-      price: "Free Trial then $19.99 / month",
-    },
-    {
-      title: "Open House's Education Community",
-      platform: "Slack",
-      perks: ["Member-Only Events", "Community of Likeminded Women"],
-      price: "$22 / month",
-    },
-    {
-      title: "Gemma's Design Space",
-      platform: "WhatsApp",
-      perks: ["Learn with friends", "Share your work"],
-      price: "$22 / month",
-    },
-    {
-      title: "Jacob's Dev Club",
-      platform: "Discord",
-      perks: ["1 on 1 Access to Jacob", "Join 150+ Other Developers"],
-      price: "$8.99 / month",
-    },
-    {
-      title: "Training for Life",
-      platform: "Discord",
-      perks: ["1 on 1 Coaching", "Meet a Community"],
-      price: "$39.99 / month",
-    },
-  ];
-
   return (
     <div className="relative min-h-screen space-bg text-zinc-100 overflow-y-auto">
       <header className="flex fixed  w-full justify-center items-center pt-6">
@@ -65,7 +25,7 @@ export default function Home() {
         </div>
 
         <h1 className="mt-6 text-5xl font-semibold leading-tight tracking-tight sm:text-6xl md:text-7xl">
-          Organize, Promote and Manage Your Event 
+          Organize, Manage and Promote Your Event 
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-zinc-400">
           Payments, user management, forms, surveys and a shareable link.
@@ -77,33 +37,8 @@ export default function Home() {
         </div>
 
         <div className="mt-10 flex items-center justify-center gap-2">
-          {["globe.svg", "globe.svg", "globe.svg", "globe.svg", "globe.svg"].map((src, i) => (
-            <div key={i} className="h-9 w-9 overflow-hidden rounded-full ring-2 ring-white/10">
-              <Image src={`/${src}`} alt="" width={36} height={36} className="dark:invert" />
-            </div>
-          ))}
-          <span className="ml-3 text-sm text-zinc-400">Join 2,000+ organizers</span>
+          <span className="ml-3 text-sm text-zinc-400 rounded-full bg-white/5 px-4 py-2 animate-bounce ring-1 ring-white/10">Join 2,000+ organizers</span>
         </div>
-
-        <section className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-3">
-          {communities.map((c, i) => (
-            <div key={i} className="rounded-2xl border border-white/10 bg-white/5 p-4 text-left">
-              <div className="flex items-center gap-3">
-                <div className="h-10 w-10 rounded-full bg-zinc-800" />
-                <div>
-                  <div className="text-sm font-semibold">{c.title}</div>
-                  <div className="text-xs text-zinc-400">Access to {c.platform}</div>
-                </div>
-              </div>
-              <ul className="mt-3 space-y-1">
-                {c.perks.map((p, j) => (
-                  <li key={j} className="text-xs text-zinc-400">• {p}</li>
-                ))}
-              </ul>
-              <div className="mt-3 text-xs text-zinc-300">Subscribe • {c.price}</div>
-            </div>
-          ))}
-        </section>
       </main>
     </div>
   );
