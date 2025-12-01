@@ -1,22 +1,13 @@
-'use client'
 import { AppSidebar } from "@/components/app-sidebar"
 import { SiteHeader } from "@/components/site-header"
 import {
   SidebarInset,
   SidebarProvider,
 } from "@/components/ui/sidebar"
-import { useTheme } from "next-themes";
-import { useEffect } from "react";
 
 export default function BrandLayout({ children }: Readonly<{
   children: React.ReactNode;
 }>) {
-    const { theme, setTheme } = useTheme();
-
-    useEffect(() => {
-      setTheme('theme-ocean');
-    }, [theme, setTheme]);
-    
   return (
     <SidebarProvider
       style={

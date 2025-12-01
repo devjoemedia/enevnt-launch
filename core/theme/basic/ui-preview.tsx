@@ -14,7 +14,7 @@ const BasicFormPreview = ({ event }: BasicFormPreviewProps) => {
 
   return (
     <div className="">
-      <div className="flex-1 h-full  pb-28">
+      <div className="flex-1 h-full pb-16">
         <img
           src={event.banner_image}
           alt="Image"
@@ -79,19 +79,19 @@ const BasicFormPreview = ({ event }: BasicFormPreviewProps) => {
             <h1 className=" text-xl font-semibold leading-tight tracking-tight  md:text-xl">
               Speakers
             </h1>
-              <div className="flex items-center mt-2 gap-2">
-                <div className="h-10 w-10 text-sm font-bold rounded-md bg-muted flex items-center justify-center">
-                  eL
-                </div>
-                <div className="">
-                  <p className="text-sm text-zinc-400">
-                    Host
-                  </p>
-                  <p className="text-sm text-zinc-500 font-medium">
-                    {event.host}
-                  </p>
-                </div>
-                </div>
+            <div className="flex items-center mt-2 gap-2">
+              <div className="h-10 w-10 text-sm font-bold rounded-md bg-muted flex items-center justify-center">
+                eL
+              </div>
+              <div className="">
+                <p className="text-sm text-zinc-400">
+                  Host
+                </p>
+                <p className="text-sm text-zinc-500 font-medium">
+                  {event.host}
+                </p>
+              </div>
+            </div>
             {event.speakers.map((speaker, idx) => (
               <div className="flex items-center mt-2 gap-2" key={speaker + idx}>
                 <div className="h-10 w-10 text-sm font-bold rounded-md bg-muted flex items-center justify-center">
@@ -129,12 +129,11 @@ const BasicFormPreview = ({ event }: BasicFormPreviewProps) => {
               </div>
             ))}
           </section>
-
         </section>
       </div>
 
-      <section className='absolute z-50 max-w-xl mx-auto bottom-0 left-0 right-0 px-5 pb-5 pt-10 bg-linear-to-t from-white via-white  to-transparent'>
-        <button onClick={() => setIsOpen(true)} className='bg-foreground mx-auto w-full text-background px-4 py-3.5 rounded-full mt-5'>
+      <section className='absolute z-50 lg:max-w-xl mx-auto bottom-0 left-0 right-0 px-5 pb-5 pt-10 bg-linear-to-t from-white via-white to-transparent'>
+        <button onClick={() => setIsOpen(true)} className='bg-primary mx-auto w-full text-background px-4 py-3.5 rounded-full mt-5'>
           Register Now
         </button>
         <p className="mx-auto text-center text-base text-zinc-400 animate-pulse">

@@ -118,7 +118,7 @@ export function BasicRegistration({ isOpen, setIsOpen }: { isOpen: boolean, setI
             <button type="submit" className='bg-[#FB640D] w-full text-white px-4 py-3.5! rounded-full mt-5'>
               Save
             </button>
-            <button type="submit" className='bg-white  border border-gry-100 w-full px-4 py-3.5! rounded-full mt-5'>
+            <button onClick={() => setIsOpen(false)} type="submit" className='bg-white  border border-gry-100 w-full px-4 py-3.5! rounded-full mt-5'>
               Cancel
             </button>
           </DrawerFooter>
